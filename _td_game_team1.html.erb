@@ -1,0 +1,10 @@
+<td class='game-team1'>
+  <span class='<%= game.team1_style_class %>'>
+    <%= link_to game.team1.title, live_game_path(game.id) %>
+  </span>
+  <span>
+    <%= "(#{game.team1.title2})" if game.team1.title2.present? %>
+  </span>
+  <%= logo_for_team( game.team1 ) %>
+</td>
+

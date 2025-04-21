@@ -1,0 +1,333 @@
+GIT
+  remote: https://github.com/openfootball/at-austria.git
+  revision: c5a616f450a276906eb9543f97d4dbd0dab49ecb
+  specs:
+    sportdb-data-at (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/ch-confoederatio-helvetica.git
+  revision: 276af874aacdea0283633f86e87ed739dd7adb0f
+  specs:
+    sportdb-data-ch (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/clubs.git
+  revision: 4524ef40d1fd1051bb5a727ed5789bf4cdcf3d4c
+  specs:
+    sportdb-data-clubs (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/de-deutschland.git
+  revision: 064f94e75fbb44e9f526c8b7914162b8888fd860
+  specs:
+    sportdb-data-de (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/en-england.git
+  revision: 51bf7f01e52c599ca01b8ea39e4dca5a29341d88
+  specs:
+    sportdb-data-en (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/es-espana.git
+  revision: 75405dc04168b143880f4030857c957cd04d9772
+  specs:
+    sportdb-data-es (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/europe-champions-league.git
+  revision: 408ea23fa97919f58376023fb56214e10d35fc15
+  specs:
+    sportdb-data-europe-champions-league (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/fr-france.git
+  revision: d004df6606e9040db77cdbbdcba4deb30c711695
+  specs:
+    sportdb-data-fr (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/it-italy.git
+  revision: d31dbe502f2d4a3ffb8f860f5d4746bdca2e5a19
+  specs:
+    sportdb-data-it (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/national-teams.git
+  revision: 0ac23e78475f78368e958ade9f6cb1b5b2b04596
+  specs:
+    sportdb-data-national-teams (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/stadiums.git
+  revision: 04c169c86da3db2980e953eb79ab5335ed4a9df0
+  specs:
+    sportdb-data-stadiums (9.9.9)
+
+GIT
+  remote: https://github.com/openfootball/world-cup.git
+  revision: deb1459734a7de97b97b7ca14cac4ae29116ed58
+  specs:
+    sportdb-data-world-cup (9.9.9)
+
+GIT
+  remote: https://github.com/openmundi/world.db.git
+  revision: fa67418028e8a9df7ae2bcab3ea6a7a9b89a9f65
+  specs:
+    worlddb-data (9.9.9)
+
+GIT
+  remote: https://github.com/opensport/american-football.db.git
+  revision: 5a055bd34585af4e25143ab3f0781c54b0545692
+  specs:
+    sportdb-data-american-football (9.9.9)
+
+GIT
+  remote: https://github.com/sportlogos/football.db.logos.ruby.git
+  revision: 23b39b269966583e0b2adc6354b9c9f7bce7e4fe
+  branch: gh-pages
+  specs:
+    footballdb-logos (0.1.0)
+
+GIT
+  remote: https://github.com/sportlogos/sport.db.logos.ruby.git
+  revision: dcef9a88c6a36539d24243b6ebef63fb804c5b9b
+  branch: gh-pages
+  specs:
+    sportdb-logos (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    about (0.1.0)
+      logutils (>= 0.5)
+      textutils (>= 0.7)
+    actionmailer (3.2.12)
+      actionpack (= 3.2.12)
+      mail (~> 2.4.4)
+    actionpack (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      journey (~> 1.0.4)
+      rack (~> 1.4.5)
+      rack-cache (~> 1.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.2.1)
+    activemodel (3.2.12)
+      activesupport (= 3.2.12)
+      builder (~> 3.0.0)
+    activerecord (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+      arel (~> 3.0.2)
+      tzinfo (~> 0.3.29)
+    activerecord-utils (0.2.0)
+      logutils
+    activeresource (3.2.12)
+      activemodel (= 3.2.12)
+      activesupport (= 3.2.12)
+    activesupport (3.2.12)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    activityutils (0.1.0)
+      logutils (>= 0.5)
+    annotate (2.4.1.beta1)
+    arel (3.0.3)
+    bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
+    bourbon (1.4.0)
+      sass (>= 3.1)
+    builder (3.0.4)
+    coffee-rails (3.2.2)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.2.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.8.0)
+    daemons (1.1.9)
+    dbbrowser (0.1.3)
+      logutils (>= 0.5)
+    erubis (2.7.0)
+    eventmachine (1.0.3)
+    eventmachine (1.0.3-x86-mingw32)
+    execjs (2.2.1)
+    fetcher (0.4.3)
+      logutils (>= 0.6)
+    gli (2.12.1)
+    hike (1.2.3)
+    i18n (0.6.11)
+    journey (1.0.4)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.8.1)
+    kramdown (1.4.2)
+    logutils (0.6.0)
+    mail (2.4.4)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.25.1)
+    multi_json (1.10.1)
+    persondb (0.3.1)
+      activerecord
+      activerecord-utils
+      logutils
+      props
+      tagutils
+      textutils
+      worlddb
+    pg (0.17.1)
+    pg (0.17.1-x86-mingw32)
+    polyglot (0.3.5)
+    props (1.1.1)
+    rack (1.4.5)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-protection (1.5.3)
+      rack
+    rack-ssl (1.3.4)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rails (3.2.12)
+      actionmailer (= 3.2.12)
+      actionpack (= 3.2.12)
+      activerecord (= 3.2.12)
+      activeresource (= 3.2.12)
+      activesupport (= 3.2.12)
+      bundler (~> 1.0)
+      railties (= 3.2.12)
+    rails-i18n (3.0.1)
+      i18n (~> 0.5)
+      rails (>= 3.0.0, < 4.0.0)
+    railties (3.2.12)
+      actionpack (= 3.2.12)
+      activesupport (= 3.2.12)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (>= 0.14.6, < 2.0)
+    rake (10.3.2)
+    rdoc (3.12.2)
+      json (~> 1.4)
+    ri_cal (0.8.8)
+    sass (3.4.5)
+    sass-rails (3.2.6)
+      railties (~> 3.2.0)
+      sass (>= 3.1.10)
+      tilt (~> 1.3)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sportdb (1.9.8)
+      activerecord
+      activerecord-utils
+      fetcher (>= 0.3)
+      gli (>= 2.5.6)
+      logutils
+      persondb
+      props
+      sportdb-console
+      sportdb-keys
+      sportdb-service
+      sportdb-update
+      tagutils
+      textutils
+      worlddb (>= 2.0.2)
+    sportdb-admin (0.3.0)
+    sportdb-console (0.0.1)
+    sportdb-keys (0.0.1)
+    sportdb-market (0.5.1)
+    sportdb-play (0.2.5)
+    sportdb-service (0.4.0)
+    sportdb-update (0.0.1)
+    sprockets (2.2.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sqlite3 (1.3.9)
+    sqlite3 (1.3.9-x86-mingw32)
+    tagutils (0.2.2)
+      activerecord
+      logutils (>= 0.6)
+    textutils (0.9.4)
+      activesupport
+      logutils (~> 0.5)
+      props
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
+    thor (0.19.1)
+    tilt (1.4.1)
+    treetop (1.4.15)
+      polyglot
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.41)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+    worlddb (2.0.4)
+      activerecord
+      gli (>= 2.9)
+      logutils
+      props
+      tagutils
+      textutils (>= 0.9.4)
+    worlddb-admin (0.1.1)
+    worlddb-flags (0.1.0)
+
+PLATFORMS
+  ruby
+  x86-mingw32
+
+DEPENDENCIES
+  about
+  activityutils (= 0.1.0)
+  annotate (~> 2.4.1.beta)
+  bcrypt-ruby (~> 3.0.0)
+  bourbon (= 1.4.0)
+  coffee-rails (~> 3.2.1)
+  dbbrowser
+  footballdb-logos (= 0.1.0)!
+  jquery-rails
+  kramdown
+  pg
+  props (= 1.1.1)
+  rails (= 3.2.12)
+  rails-i18n
+  ri_cal
+  sass-rails (~> 3.2.3)
+  sinatra
+  sportdb (= 1.9.8)
+  sportdb-admin (= 0.3.0)
+  sportdb-data-american-football (= 9.9.9)!
+  sportdb-data-at (= 9.9.9)!
+  sportdb-data-ch (= 9.9.9)!
+  sportdb-data-clubs (= 9.9.9)!
+  sportdb-data-de (= 9.9.9)!
+  sportdb-data-en (= 9.9.9)!
+  sportdb-data-es (= 9.9.9)!
+  sportdb-data-europe-champions-league (= 9.9.9)!
+  sportdb-data-fr (= 9.9.9)!
+  sportdb-data-it (= 9.9.9)!
+  sportdb-data-national-teams (= 9.9.9)!
+  sportdb-data-stadiums (= 9.9.9)!
+  sportdb-data-world-cup (= 9.9.9)!
+  sportdb-logos (= 0.1.0)!
+  sportdb-market (= 0.5.1)
+  sportdb-play (= 0.2.5)
+  sqlite3
+  tagutils (= 0.2.2)
+  thin
+  uglifier (>= 1.0.3)
+  worlddb (= 2.0.4)
+  worlddb-admin (= 0.1.1)
+  worlddb-data (= 9.9.9)!
+  worlddb-flags (= 0.1.0)

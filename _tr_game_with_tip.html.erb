@@ -1,0 +1,56 @@
+<!-- requires: game, tip, tabindex, f (form) -->
+
+<!-- options:
+      - show_group
+      - show_round  -->
+
+
+<tr id='game<%= game.id %>'>
+
+  <% if tip.present? %>
+    <% if game.over? || tip.locked? %>
+      <!-- fix/todo: add a flag/icon for locked? game over? -->
+      <%= render_tip_toto12x( tip )  %>
+      <%= render_tip_bingo( tip )  %>
+      <%= render_game_team1( game ) %>
+      <%= render_tip_score( tip )  %>
+      <%= render_game_score( game ) %>
+      
+      <!-- hack: for group calc add hidden input text field!!! use display: none; NOT type hidden
+        -->
+      <%= render_tip_score_input_for_form( tip, f, :hidden => true ) %>
+
+    <% else %>
+      <td><!-- no tip.toto12x yet --></td>
+      <td><!-- no tip.bingo yet --></td>
+      <%= render_game_team1( game ) %>
+      <%= render_tip_score_input_for_form( tip, f, :tabindex => tabindex ) %>
+      <td><!-- no game.score yet --></td>
+    <% end %>
+    <%= render_game_team2( game ) %>
+  <% else %> <!-- no tip present -->
+    <td><!-- no tip.toto12x yet --></td>
+    <td><!-- no tip.bingo yet --></td>
+    <%= render_game_team1( game ) %>
+    <td class='tip-score'>♦<!-- fehler: tip datensatz fehlt! --></td>
+    <%= render_game_score( game ) %>
+    <%= render_game_team2( game ) %>
+  <% end %>
+
+
+  <td>
+  <%= render_game_quotes( game ) if show_odds %>
+  </td>
+
+  
+  <td class='game-group game-round'>
+    <% if show_group %>
+      <%= "(#{game.group.title})" if game.group %>
+    <% elsif show_round %>
+      <%= "(#{game.round.title})" %>
+    <% end %>
+  </td>
+
+  <%= render_game_date( game ) %>
+
+</tr>

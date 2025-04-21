@@ -1,0 +1,20 @@
+<!-- paras: required play
+     calculated: pool from play
+  -->
+ 
+<table>
+ <tr>
+   <td>1. Platz</td>
+   <%= render_play_team1( play ) %>
+ </tr>
+ <tr>
+   <td>2. Platz</td>
+   <%= render_play_team2( play ) %>
+ </tr>
+ <% if pool.team3? %>
+ <tr>
+   <td>3. Platz</td>
+   <%= render_play_team3( play ) %>
+ </tr>
+ <% end %>
+</table>

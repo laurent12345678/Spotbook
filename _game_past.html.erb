@@ -1,0 +1,47 @@
+
+<tr>
+  <td><%= game.play_at.strftime('%H:%M') %></td>
+  
+  <td style='text-align: right;'>
+     <span class='<%= game.team1_style_class %>'>
+      <%= game.team1.title %>
+     </span>
+     <%= logo_for_team( game.team1 ) %>
+   </td>
+
+   <td style='white-space: nowrap;'>
+  <%= fields_for 'games[]', game do |ff| %>
+     <%= ff.hidden_field :id %>
+     <%= ff.text_field :score1, :size => 1 %>
+       :
+     <%= ff.text_field :score2, :size => 1 %>
+     
+     <% if game.knockout? %>
+        /
+       <%= ff.text_field :score3, :size => 1 %>
+         :
+       <%= ff.text_field :score4, :size => 1 %>
+        n.V.
+       <%= ff.text_field :score5, :size => 1 %>
+         :
+       <%= ff.text_field :score6, :size => 1 %>
+        i.E.
+     <% end %>  
+  <% end %><!-- fields_for games -->
+   </td>
+
+   <td>
+    <%= logo_for_team( game.team2 ) %>
+    <span class='<%= game.team2_style_class %>'>
+      <%= game.team2.title %>
+    </span>
+   </td>
+  
+   <td>
+    <%= game.locked?   ? '(Locked Flag)' : '' %>
+   </td>
+  
+   <td>
+     (<%= game.round.event.title %> / <%= game.round.title %>)
+   </td>
+</tr>

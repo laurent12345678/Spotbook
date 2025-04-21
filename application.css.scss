@@ -1,0 +1,177 @@
+
+@import "bourbon";      // 3rd party css mixin library (see http://thoughtbot.com/bourbon)
+
+@import "settings";     // global color settings w/ scss variables
+
+@import "flash";
+@import "navbar";
+@import "button";
+@import "breadcrumb";
+
+@import "plays";
+@import "bingo";
+@import "live";
+
+
+
+body
+{
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+@media screen {
+
+td, div, p, li, a,
+input, select, textarea, label  { font-size: $base-font-size; }
+
+textarea { font-family: $base-font-family; }
+
+h1, h1 * { font-size: $base-font-size*1.60; }
+h2       { font-size: $base-font-size*1.40; }
+h3       { font-size: $base-font-size*1.20; }
+
+} // @media screen
+
+.odds  {
+  background-color: powderblue;
+  * { font-size: $base-font-size*0.8; }
+  .center { text-align: center; }
+}
+
+.pool.welcome-header * { font-size: $base-font-size*0.8;  }
+
+.ranking1, .ranking1 * { font-size: $base-font-size*1.75; }  // 175%
+.ranking2, .ranking2 * { font-size: $base-font-size*1.5;  }  // 150%
+.ranking3, .ranking3 * { font-size: $base-font-size*1.25; }  // 125%
+
+
+// todo: move to print.css and import???
+@media print {
+
+//use default font-size for now 
+
+  h1 {
+    font-size: $base-font-size*1.2; // 120%
+  }
+
+  .navbar            { display: none; }
+  .buttons, .actions { display: none; }   // todo: add buttons in div.buttons
+  .view  { display: none;}  // view selector bar
+  
+  .btn, .btn-primary { display: none; }
+  .flash { display: none; } // remove flash message from printout 
+  
+  .keep-together { page-break-inside: avoid; }
+  
+  .play .standing * { font-size: $base-font-size*0.8; }
+ 
+}
+
+
+.x-smaller {  font-size: 60%;  }
+.smaller   {  font-size: 80%;  }
+.larger    {  font-size: 120%; }
+.x-larger  {  font-size: 140%; }
+.xx-larger {  font-size: 160%; }
+
+.light {  color: grey; }
+
+
+span.toto12x {
+  display: inline-block;
+  padding: 0 6px;
+  border: 2px solid black;
+  @include border-radius(2px);
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  background-color: whitesmoke;
+}
+
+span.ranking-up {
+  display: inline-block;
+  padding: 0 3px;
+  color: green;
+  font-weight: bold;
+}
+
+span.ranking-down {
+  display: inline-block;
+  padding: 0 3px;
+  color: red;
+  font-weight: bold;
+}
+
+span.highlight-me {
+  display: inline-block;
+  background-color: $highlight-me-background;
+  padding: 0 6px;
+  @include border-radius(4px);
+  
+  &:hover {
+   text-decoration:blink; 
+  }
+}
+
+
+
+ul {
+    list-style-type: square;
+
+    &.none {
+      list-style-type: none;
+    }
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+   color: black; 
+   text-decoration: underline;
+  }
+
+  &:visited { color: black; }
+}
+
+
+/////////////////////////
+// version / powered_by
+
+.version
+{
+   text-align: center;
+   margin-top: 10px;
+   color: grey;
+   
+   a, span {
+     font-size: 12px;
+     color: grey
+   }
+}
+
+//////////////////////////////////////////////////
+// yellow background for input controls w/ focus
+
+input.focus, select.focus, textarea.focus, option.focus, textarea.focus {
+    background-color: $focus-background;
+}
+
+span.focus {
+    background-color: $focus-background;
+    padding-top: 3px;
+}
+
+
+////////////////////////
+// style for checking color variable (use like <span class='color navbar gradient-top'></span>)
+
+.color {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  border: 1px solid black;
+  @include border-radius(3px);
+}

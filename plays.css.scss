@@ -1,0 +1,94 @@
+table.play,
+table.plays {
+
+  input[type=text] {
+    text-align: center;
+  }
+
+
+  .game-team-winner {
+     font-weight: bold;
+     color: darkgreen;
+  }
+  
+  .game-team-draw {
+     font-weight: bold;
+     color: limegreen;
+  }
+
+  .game-team-calc {
+     font-style: italic;
+  }
+
+  tr {
+    &.game-round {
+      background-color: lightgrey;
+    }
+    
+    &.game-group {
+      background-color: lightgrey;
+    }
+  }
+
+  td {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    
+    margin: 0;
+    padding: 2px;
+       
+   &.right {
+     text-align: right;
+   }    
+        
+   &.player-name, &.player-name * {
+     font-size: $base-font-size*0.6;
+    }
+
+   &.tip-toto12x {
+     text-align: center;
+   }
+    
+   &.game-round-title {
+     /* font-weight: bold;  */
+   }
+   
+   &.game-no-fixtures {
+     text-align: center;
+   }
+    
+   &.game-team1 {
+     text-align: right;
+     /* font-weight: bold; */
+     min-width: 200px;
+   }
+   
+   &.tip-score {
+     text-align:  center;
+     /* font-weight: bold; */
+   }
+   
+   &.game-score {
+     text-align:  center;
+     /* font-weight: bold; */
+   }
+   
+   &.game-team2 {
+     /* font-weight: bold; */
+     min-width: 200px;
+   }
+   
+   &.game-group,&.game-round {
+     color: gray;
+     font-size: $base-font-size*0.8;
+   }
+      
+   &.game-date {
+     color: gray;
+     font-size: $base-font-size*0.8;
+   }
+  }
+}
